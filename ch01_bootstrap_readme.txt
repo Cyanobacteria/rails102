@@ -67,10 +67,7 @@
   flash[:alert]   紅
   flash[:warning] 黃
 
-
-
-
-
+註:說真的還不是很熟css所以並不是很清楚helper view 之間為什那樣運動,一般性的會寫,但是這個例子不是很清楚,需要再研究
 
 
 
