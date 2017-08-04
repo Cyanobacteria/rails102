@@ -53,9 +53,19 @@
 
 #第三節
 
+1.須引入 //= require bootstrap/alert
+  （第一節引入過了,原著上是這裡才引入,
+    但是我做此教材第一次的時候在後面章節遇到jquery未載入的問題,
+    除掉bug後把解法寫下來,就直接套用在第一章了,在此特別註明）
 
+2.新增 app/views/common/_flashes.html.erb
+       app/helpers/flashes_helper.rb
+       並在app/views/layout/application.htm.erb 裡面加入 <%= render "common/flashes" %>
 
-
+3.用法 在action 加入
+  flash[:notice]  綠
+  flash[:alert]   紅
+  flash[:warning] 黃
 
 
 
