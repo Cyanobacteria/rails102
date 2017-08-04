@@ -41,6 +41,16 @@
 註:頁面渲染的形式是 application夾nav and footer 再夾其他頁面,一個一層一層的概念最後渲染出來
     route > conterller > action >view（上面講的是views的部份）
 
+遭遇問題：
+
+1.routes get '/hihi', to: 'hihi#hihi' 忘記加 ,
+
+2.hihi_controller.rb 的hihi action
+  就是對應到views/hihi/hihi.html.erb 而非 views/hihis/hihihtml.erb
+
+3.對block的理解不夠精確 5.times do |x| 印出的x是0 1 2 3 4（多了解一點）
+
+
 #第三節
 
 
