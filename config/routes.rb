@@ -5,5 +5,9 @@ get '/hihi', :to => 'hihi#hihi'
 root 'groups#index'
  resources  :groups do
    resources :posts
+   member do
+     post :join
+     post :quit
+   end
  end
 end
