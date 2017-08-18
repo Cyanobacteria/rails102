@@ -14,7 +14,7 @@ before_action :checkout_permission, only: [:edit, :update, :destroy]
     @group = Group.new(group_params)
     @group.user = current_user
     if @group.save
-      
+      current_user.join!(@group)
       redirect_to groups_path
     else
       redirect_to :new
